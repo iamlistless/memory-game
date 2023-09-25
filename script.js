@@ -1,5 +1,5 @@
 // Create a variable that refers to the grid container div.
-const gridContainer = document.querySelector('.gridContainer')
+// const gridContainer = document.querySelector('.gridContainer')
 
 // Create another constant that refers to an array of colors. These are CSS compatible colors. This array only creates one instance of each color.
 const colors = ["aqua", "aquamarine", "crimson", "blue", "dodgerblue", "gold", "greenyellow", "teal"];
@@ -22,4 +22,13 @@ let activeGridbox = null;
 // Waiting for the two unmatched gridboxes to turnover again. When the gridboxes are revealed and waiting to restart, it is true.
 let awaitingEndofMove = false;
 
-console.log(colorsPickList);
+// Build up gridbox using a for loop.
+for (let i = 0; i < gridboxCount; i++) {
+    const randomIndex = Math.floor(Math.random() * colorsPickList.length);
+    const color = colorsPickList[randomIndex];
+
+    colorsPickList.splice(randomIndex, 1);
+
+    console.log(color);
+}
+
