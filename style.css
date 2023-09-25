@@ -1,0 +1,30 @@
+body {
+    background: #333333;
+    margin: 0;
+}
+
+.gridContainer {
+    /* 48px top and bottom, auto left and right */
+    margin: 48px auto; 
+    /* max-content centers the tile container */
+    width: max-content;
+    /* display in grid format */
+    display: grid;
+    /* creates 4 columns 100px wide */
+    grid-template-columns: repeat(4, 100px);
+    /* create a gap of 16px between each title */
+    gap: 16px; 
+    
+}
+
+/* need to style the grid items to make the grid visible */
+.gridbox {
+    /* indicate a height for the grid item, we are using the same pizel size as the column width (above) */
+    height: 100px;
+    /* indicate a darker background */
+    background: #111111;
+    /* indicate a border */
+    border: 5px solid #444444;
+    /* specify the mouse cursor to be displayed when pointing over an element. in this case, it is the pointer */
+    cursor: pointer;
+}
