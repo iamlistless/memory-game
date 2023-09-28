@@ -3,6 +3,16 @@ body {
     margin: 0;
 }
 
+.textContainer {
+    display: grid;
+    justify-items: center;
+    color: #444444;
+}
+
+.header, .text {
+    margin: 0;
+}
+
 .cardContainer {
     /* 48px top and bottom, auto left and right */
     margin: 48px auto; 
