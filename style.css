@@ -3,12 +3,12 @@ body {
     margin: 0;
 }
 
-.gridContainer {
+.cardContainer {
     /* 48px top and bottom, auto left and right */
     margin: 48px auto; 
     /* max-content centers the tile container */
     width: max-content;
-    /* display in grid format */
+    /* display in card format */
     display: grid;
     /* creates 4 columns 100px wide */
     grid-template-columns: repeat(4, 100px);
@@ -17,9 +17,9 @@ body {
     
 }
 
-/* need to style the grid items to make the grid visible */
-.gridbox {
-    /* indicate a height for the grid item, we are using the same pizel size as the column width (above) */
+/* need to style the card items to make the card visible */
+.card {
+    /* indicate a height for the card item, we are using the same pizel size as the column width (above) */
     height: 100px;
     /* indicate a darker background */
     background: #111111;
